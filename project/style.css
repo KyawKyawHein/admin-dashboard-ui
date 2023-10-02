@@ -1,0 +1,49 @@
+/*side bar*/
+.side-bar{
+    background-color: #ffffff;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.list-spacer{
+    padding: 10px 0;
+}
+.list-item{
+    transition: 0.5s;
+}
+.list-item:hover{
+    background-color: #d2cccc;
+}
+.body{
+    background-color: #fafafa;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/* nav  */
+.nav-bar{
+    position: sticky;
+    margin-top: 10px;
+    z-index: 1000;
+    top:0;
+}
+.profile-photo{
+    height: 35px;
+    border-radius: 50%;
+}
+.divider{
+    border: 1px solid #00000020;
+    margin-bottom: 5px;
+}
+.card-logo{
+    font-size: 40px;
+}
+.viewer-img{
+    border-radius : 50%;
+    margin-left: -20px;
+}
+.card-control{
+    margin-top: -100px;
+}
+.item-photo{
+    height: 200px;
+}

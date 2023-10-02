@@ -1,0 +1,25 @@
+.side-bar{
+    background-color: #dad2d2;
+}
+.body{
+    background-color: #f3f3f3;
+}
+
+/* nav  */
+.nav-bar{
+    position: sticky;
+    margin-top: 10px;
+    z-index: 1000;
+    top:0;
+}
+.profile-photo{
+    height: 35px;
+    border-radius: 50%;
+}
+.divider{
+    border: 1px solid #00000020;
+    margin-bottom: 5px;
+}
+.breadcrumb-container{
+    background: #ffffff;
+}

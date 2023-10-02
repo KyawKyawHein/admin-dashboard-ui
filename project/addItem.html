@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../_data/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../_data/vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="addItem.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="row min-vh-100">
+                    <!-- side-bar  -->
+                    <div class="col-2 side-bar">
+
+                    </div>
+
+                    <!-- body-start  -->
+                    <div class="col-10 body">
+                        <!-- navbar-row -->
+                        <div class="row nav-bar">
+                            <div class="col-12">
+                                <div class="p-2 bg-primary rounded d-flex justify-content-between align-items-center">
+                                    <!--                                    search box-->
+                                    <div class="d-flex w-25">
+                                        <input type="text" class="form-control me-2" placeholder="Search Everything">
+                                        <button class="search-icon btn px-3 text-primary feather-search bg-light rounded"></button>
+                                    </div>
+                                    <!--                                    dropdown profile -->
+                                    <div class="">
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="../_data/img/user/avatar1.jpg" class="profile-photo" alt="">
+                                                <p class="mb-0 ms-1 me-1">Kyaw Kyaw Hein</p>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <div class="divider"></div>
+                                                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                        breadcrumb row-->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div class="breadcrumb-container p-2">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb ms-2 mt-2">
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+<!--                        add item row-->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div class="add-item">
+                                    <div class="card mb-5">
+                                        <div class="card-header d-flex justify-content-between p-3">
+                                            <div class="header-title d-flex align-items-center">
+                                                <i class="feather-plus-circle text-primary fs-4"></i>
+                                                <h3 class="mb-0 ps-2">Add Item</h3>
+                                            </div>
+                                            <button class="btn btn-outline-primary"><i class="feather-list"></i></button>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="card-body">
+                                            <form action="">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="">
+                                                            <div class="form-group mb-3">
+                                                                <div class="d-flex align-items-center text-black-50 mb-2 fw-bold">
+                                                                    <p class="mb-0 me-2">Photo Upload</p>
+                                                                    <i class="feather-info"></i>
+                                                                </div>
+                                                                <input type="file" class="form-control w-75" required name="image">
+                                                            </div>
+                                                            <div class="form-group mb-3">
+                                                                <div class="d-flex align-items-center text-black-50 mb-2 fw-bold">
+                                                                    <p class="mb-0 me-2">Item Name</p>
+                                                                </div>
+                                                                <input type="text" class="form-control w-75" required name="image">
+                                                            </div>
+                                                            <div class="form-group mb-3">
+                                                                <div class="d-flex align-items-center text-black-50 mb-2 fw-bold">
+                                                                    <p class="mb-0 me-2">Item Type</p>
+                                                                </div>
+                                                                <select name="inventory" id="inventory" class="form-control w-75">
+                                                                    <option value="0">Fresh Food</option>
+                                                                    <option value="1">Dry Food</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group mb-3">
+                                                                <div class="d-flex align-items-center text-black-50 mb-2 fw-bold">
+                                                                    <p class="mb-0 me-2">Category</p>
+                                                                </div>
+                                                                <select name="inventory" id="category" class="form-control w-75">
+                                                                    <option value="0">Select Category</option>
+                                                                    <option value="1">Phone</option>
+                                                                    <option value="1">Computer</option>
+                                                                    <option value="1">TV</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group mb-3">
+                                                                <div class="d-flex align-items-center text-black-50 mb-2 fw-bold">
+                                                                    <p class="mb-0 me-2">Sub Category</p>
+                                                                </div>
+                                                                <select name="inventory" id="subCategory" class="form-control w-75">
+                                                                    <option value="0">Select Category</option>
+                                                                    <option value="1">Samsung</option>
+                                                                    <option value="1">Mi</option>
+                                                                    <option value="1">Acer</option>
+                                                                    <option value="1">Panasonic</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <div class="form-group mb-3">
+                                                                        <p class="mb-2">Item Quantity</p>
+                                                                        <input type="number" class="form-control" min="1" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div class="form-group mb-3">
+                                                                        <div class="d-flex align-items-center text-black-50 mb-2 fw-bold">
+                                                                            <p class="mb-0 me-2">Sub Category</p>
+                                                                        </div>
+                                                                        <select name="inventory" id="subCategory" class="form-control">
+                                                                            <option value="0">Fresh Food</option>
+                                                                            <option value="1">Dry Food</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="">
+                                                                <div class="form-group mb-3">
+                                                                    <p class="mb-2">Price</p>
+                                                                    <input type="number" class="form-control w-75" min="1" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="">
+                                                                <div class="form-group mb-3">
+                                                                    <p class="mb-2">Description</p>
+                                                                    <textarea name="textArea" id="textArea" cols="30" class="form-control" rows="8"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="divider mb-3"></div>
+                                                <button type="submit" class="btn btn-primary">Add Item</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../_data/vendor/jquery-3.3.1.min.js"></script>
+<script src="../_data/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
